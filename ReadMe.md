@@ -2,3 +2,7 @@
 ## 这个项目不是我写的，是从http://www.webhek.com/misc/3d-album上抄的
 ### 因为看到"released under the MIT license"，应该可以开源用吧？
 ## 做了一些修改，暂时放了些自己的照片，以后可能会改成真正有用的东西
+***
+##预览地址：
+### http://zhengxiaoyao0716.github.io/Album3d
+### http://temp.zheng0716.com/Album3d
