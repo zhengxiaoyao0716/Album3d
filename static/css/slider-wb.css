@@ -1,0 +1,205 @@
+/* dhteumeuleu.com slider menu - last modified 26 Jan 2013 */
+#icon {
+	position:relative;
+	top:6px;
+	left:65px;
+	width:40px;
+	height:40px;
+	overflow:hidden;
+	cursor:pointer;
+	background:#FF9000;
+	border-radius:6px 0 0 0;
+	-moz-transition: all 0.6s ease-in-out 0s; -webkit-transition: all 0.6s ease-in-out 0s;
+	-o-transition: all 0.6s ease-in-out 0s; transition: all 0.6s ease-in-out 0s;
+}
+#icon div {
+	position:absolute;
+	background:transparent;
+}
+#icon div:nth-child(1) {
+	position:absolute;
+	width:0;
+	height:0;
+	top:50%;
+	left:20px;
+	border-width:7px 0 7px 8px;
+	border-style:solid;
+	border-color:transparent #fff;
+	margin-top:-7px;
+}
+#icon div:nth-child(2) {
+	position:absolute;
+	top:50%;
+	left:12px;
+	width:8px;
+	height:6px;
+	margin-top:-3px;
+	background:#fff;
+}
+#nav {
+	position: absolute;
+	top:10px;
+	width: 100px;
+	height:0;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select: none;
+}
+#nav-switch {
+	display: none;
+}
+#nav .label {
+	display: block;
+	cursor: pointer;
+}
+#nav .container {
+	position:absolute;
+	width: 100%;
+	left: -100px;
+	-moz-transition: left 0.3s ease-in-out 0s; -webkit-transition: left 0.3s ease-in-out 0s;
+	-o-transition: left 0.3s ease-in-out 0s; transition: left 0.3s ease-in-out 0s;
+}
+#nav .container > div {
+	float: left;
+	width: 50%;
+	padding: 0;
+}
+#nav .container .nav-on {
+	padding-left: 0;
+	color: #333;
+}
+#nav .container .nav-off {
+	width:40px;
+	height:40px;
+	padding-right: 10px;
+}
+#nav-switch:checked + .label .container {
+	left: 10px;
+}
+#nav-switch:checked + .label #icon {
+	background:#0065CB;
+	-webkit-transform:rotate(-180deg);
+	-moz-transform:rotate(-180deg);
+	-ms-transform:rotate(-180deg);
+	-o-transform:rotate(-180deg);
+	transform:rotate(-180deg);
+	border-radius:0 0 6px 0;
+}
+.title {
+	position: absolute;
+	top: 2px;
+	margin:0;
+	padding:0;
+	left: 170px;
+	font-size:24px;
+	line-height:40px;
+	height:40px;
+	font-family: "Segoe UI Light", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font-weight: bold;
+	color:#333;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.menu {
+	position: relative;
+	left: 0;
+	top: 6px;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	font-family: "Segoe UI Light", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font-weight:lighter;
+	color: #333;
+	font-size:1em;
+	cursor:pointer;
+}
+.menu li {
+	position:relative;
+	list-style:none;
+	cursor: pointer;
+	width: 100px;
+	height: 40px;
+	border-right:#ddd solid 1px;
+}
+.menu a {
+	position:relative;
+	text-decoration: none;
+	display:block;
+	line-height:40px;
+	color:#333;
+	padding-left:40px;
+}
+.menu li a:hover, .menu  li a:focus, .menu  li a:active {
+	background:#ff9000;
+}
+#nav li:before,
+#nav li:after,
+#nav li a:before,
+#nav li a:after {
+	content:"";
+	position:absolute;
+	top:50%;
+	margin-left:10px;
+}
+#nav .home a:before {
+	left:2px;
+	border-style:solid;
+	border-color:transparent;
+	border-width:8px 7px;
+	border-bottom-color:#333;
+	margin-top:-16px;
+}
+#nav .home a:after {
+	left:4px;
+	width:2px;
+	height:4px;
+	border-style:solid;
+	border-color:#333 #333 transparent;
+	border-width:3px 4px 0;
+	margin-top:0;
+}
+#nav .arrow a:before {
+	left:8px;
+	border-width:7px 0 7px 8px;
+	border-style:solid;
+	border-color:transparent #333;
+	margin-top:-7px;
+}
+#nav .arrow a:after {
+	left:0;
+	width:8px;
+	height:6px;
+	margin-top:-3px;
+	background:#333;
+}
+#nav .arrow.back a:before {
+	left:0;
+	border-width:7px 8px 7px 0;
+}
+#nav .arrow.back a:after {
+	left:8px;
+}
+#nav .list a:before {
+	top:14px;
+	left:5px;
+	width:12px;
+	height:2px;
+	border-width:6px 0;
+	border-style:double;
+	border-color:#333;
+	background:transparent;
+}
+#nav .list a:after{
+	top:14px;
+	left:1px;
+	width:2px;
+	height:2px;
+	border-width:6px 0;
+	border-style:double;
+	border-color:#333;
+	background:transparent;
+}
